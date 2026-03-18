@@ -1,0 +1,77 @@
+<body>
+    <section class="contact-area section--padding position-relative">
+        <span class="ring-shape ring-shape-1"></span>
+        <span class="ring-shape ring-shape-2"></span>
+        <span class="ring-shape ring-shape-3"></span>
+        <span class="ring-shape ring-shape-4"></span>
+        <span class="ring-shape ring-shape-5"></span>
+        <span class="ring-shape ring-shape-6"></span>
+        <span class="ring-shape ring-shape-7"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card card-item">
+                        <div class="card-body">
+                          <div class="text-center mx-auto mb-3" >
+                            <a href="">
+                             <img src="/assets/images/s-logo.png" alt="">
+                            </a>
+                          </div>
+                            <h3 class="card-title text-center fs-24 lh-35 pb-4">Login to Admin Account!</h3>
+                            <div class="section-block"></div>
+                            <p class="alertmsg">{{alertmsg}}</p>
+                            <form [formGroup]="loginform" (ngSubmit)="loginsubmit(loginform.value)"  class="pt-4">
+                                <!-- Email Address -->
+                                  <div class="input-box">
+                                    <label class="label-text">Username <span style="color: red;">*</span></label>
+                                    <div class="form-group">
+                                      <input class="form-control form--control" type="text" formControlName="email" placeholder="Enter email address">
+                                      <span class="fa fa-envelope input-icon"></span>
+                                      <div *ngIf="loginform.get('email')!.hasError('required') && loginform.get('email')!.touched" class="error-message">
+                                        username is required.
+                                      </div>
+                                      <div *ngIf="loginform.get('email')!.hasError('email') && loginform.get('email')!.touched" class="error-message">
+                                        Enter a valid username.
+                                      </div>
+                                    </div>
+                                  </div><!-- end input-box -->
+                                
+                                  <!-- Password -->
+                                  <div class="input-box">
+                                    <label class="label-text">Password <span style="color: red;">*</span></label>
+                                    <div class="input-group mb-3">
+                                      <span class="fa fa-lock input-icon"></span>
+                                      <input [type]="passwordVisible ? 'text' : 'password'" formControlName="password" class="form-control form--control password-field" placeholder="Password">
+                                      <div class="input-group-append">
+                                        <a class="btn theme-btn theme-btn-transparent" (click)="togglePasswordVisibility()">
+                                          <i class="fa show-icon" [ngClass]="passwordVisible ? 'fa-eye' : 'fa-eye-slash'" width="25" height="30"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <div *ngIf="loginform.get('password')!.hasError('required') && loginform.get('password')!.touched" class="error-message" style="margin-top: -15px;">
+                                      Password is required.
+                                    </div>
+                                    <div *ngIf="loginform.get('password')!.hasError('pattern') && loginform.get('password')!.touched" class="error-message" style="margin-top: -15px;">
+                                      Password must contain at least one uppercase letter, one lowercase letter, one special character, and one number.
+                                    </div>
+                                  </div><!-- end input-box -->
+
+                                <div class="btn-box">
+                                    <div class="d-flex align-items-center justify-content-between pb-4">
+                                        <div class="custom-control custom-checkbox fs-15">
+                                            <!-- <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox" required>
+                                            <label class="custom-control-label custom--control-label" for="rememberMeCheckbox">Remember Me</label> -->
+                                        </div><!-- end custom-control -->
+                                        <a routerLink="/forgot" class="btn-text">Forgot my password?</a>
+                                    </div>
+                                    <button class="btn theme-btn" type="submit" [disabled]="!loginform.valid">Login Account <i class="fa fa-arrow-right icon ml-1"></i></button>
+                                 </div><!-- end btn-box -->
+
+                            </form>
+                        </div><!-- end card-body -->
+                    </div><!-- end card -->
+                </div><!-- end col-lg-7 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section>
+</body>

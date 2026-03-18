@@ -1,0 +1,66 @@
+<div class="dashboard-content-wrap">
+     
+    <div class="container-fluid">
+        <div class="mb-2">
+            <a routerLink="/home/inrwithdraw" style="color: #79bfff;"><i class="fa fa-arrow-circle-left"></i> Back </a> 
+            </div>
+         <div class="dashboard-heading mb-5">
+            <h3 class="fs-22 font-weight-semi-bold">Transaction Details</h3>
+        </div>
+        <div class="profile-detail mb-5">
+            <ul class="generic-list-item generic-list-item-flash">
+                 <li><span class="profile-name">UserName:</span><span class="profile-desc">{{data.username}}</span></li>
+                <!-- <li><span class="profile-name">Last Name:</span><span class="profile-desc">--</span></li> -->
+                <!-- <li><span class="profile-name">User Name:</span><span class="profile-desc">{{data.username}}</span></li> -->
+                <!-- <li><span class="profile-name">Email:</span><span class="profile-desc">{{data.userId.email}}</span></li> -->
+                <!-- <li><span class="profile-name">Phone Number:</span><span class="profile-desc">{{data.userId.phoneno}}</span></li> -->
+                <li><span class="profile-name">Amount :</span><span class="profile-desc">{{data.amount}}</span></li>
+                 <li><span class="profile-name">Currency :</span><span class="profile-desc">INR</span></li>
+                <li><span class="profile-name">Type :</span><span class="profile-desc">Withdraw</span></li>
+                <li>
+                    <span class="profile-name">Bank Details :</span> <br>
+                    <ul>
+                        <li><span class="profile-name">Account Holder Name :</span> <span class="profile-desc">{{data.bankDetails.bankAccountFullName}}</span></li>
+                        <li><span class="profile-name">Account Number :</span> <span class="profile-desc">{{data.bankDetails.bankAccountNumber}}</span></li>
+                        <li><span class="profile-name">IFSC Code :</span> <span class="profile-desc">{{data.bankDetails.bankAccountIfsc}}</span></li>
+                    </ul>
+                </li>
+                <!-- <li><span class="profile-name">Transaction Image  :</span><span class="profile-desc"> <a href="https://api.suvarnasiddhi.com/assets/{{data.paymentProof}}" target="_blank"> <img src="https://api.suvarnasiddhi.com/assets/{{data.paymentProof}}" alt="" width="150"> </a></span></li> -->
+                <li>
+                    <span class="profile-name">Status  :</span>
+                    <span class="profile-desc">{{data.status}}</span>
+                    <!-- <span class="profile-desc" *ngIf="data.status==0">Rejected</span> -->
+                    <form [formGroup]="depositstatusform" (ngSubmit)="onSubmitstatus()" *ngIf="data.status=='PENDING'">
+                         <span class="profile-desc" *ngIf="data.status=='PENDING'" >
+                           
+                            <div class="form-group">
+                                <select id="kycStatusFilter" formControlName="selectedOption">
+                                    <option value="">Select</option>
+                                    <option value='REJECTED'>Reject</option>
+                                    <option value='APPROVED'>Approved</option>
+                                </select>
+                            </div>
+                            <div class="form-group mr-3" *ngIf="depositstatusform.get('selectedOption')?.value === 'APPROVED'">
+                                <input class="form-control " type="text" formControlName="utrnumber" placeholder="Enter UTR number">
+                            </div>
+                            <div class="form-group mr-3" *ngIf="depositstatusform.get('selectedOption')?.value === 'REJECTED'">
+                                <input class="form-control  " type="text" formControlName="reason" placeholder="Enter reason">
+                            </div>
+                        </span>
+                         
+                        <button class="btn theme-btn" type="submit" [disabled]="depositstatusform.invalid">Submit</button>
+                    </form>
+                   
+                </li>
+                <li><span class="profile-name">Transaction Date  :</span><span class="profile-desc">{{data.ist_date}}</span></li>
+
+
+             </ul>    
+        </div>
+       
+        <br><br><br><br>
+    </div><!-- end container-fluid -->
+</div><!-- end dashboard-content-wrap -->
+ 
+
+ 

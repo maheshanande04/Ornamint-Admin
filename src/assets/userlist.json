@@ -1,0 +1,1222 @@
+[
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 1,
+                "mode": "Online"
+            },
+            "aadhaar": {
+                "status": 1,
+                "mode": "Online"
+            },
+            "selfie": {
+                "status": 1,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 1,
+                "number": "BYOPC9428B",
+                "reject_reason": "",
+                "details": {
+                    "client_id": "pan_wBqWJWigPhfBvwiMHuvw",
+                    "pan_number": "BYOPC9428B",
+                    "full_name": "POOJA NANASAHEB CHAVAN",
+                    "category": "person"
+                }
+            },
+            "aadhaar": {
+                "status": 1,
+                "number": "493825581978",
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707301721/zecv7ohhbkjziaoickp3.jpg",
+                "image_local": "img-1707301722174.png",
+                "reject_reason": "",
+                "details": {
+                    "client_id": "aadhaar_v2_PZkYOInvCqZiXUXlhLLn",
+                    "full_name": "Pooja Nanasaheb Chavan",
+                    "aadhaar_number": "493825581978",
+                    "dob": "2000-05-08",
+                    "gender": "F",
+                    "address": {
+                        "country": "India",
+                        "dist": "Solapur",
+                        "state": "Maharashtra",
+                        "po": "Pandharechiwadi",
+                        "loc": "Taluka Pandharpur",
+                        "vtc": "Jadhavwadi",
+                        "subdist": "Pandharpur",
+                        "street": "",
+                        "house": "",
+                        "landmark": ""
+                    },
+                    "face_status": false,
+                    "face_score": -1,
+                    "zip": "413304",
+                    "profile_image": "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",
+                    "has_image": true,
+                    "email_hash": "b2b02aec55483d68d854d32a080020e396fab8eba250e7cc44866946cff608be",
+                    "mobile_hash": "4eb7de6261c008bfc62f0c176cdc9b877509fc95210f1893d9c3acf8b86edf94",
+                    "raw_xml": "https://aadhaar-kyc-docs.s3.amazonaws.com/monowix/aadhaar_xml/197820240207155840799/197820240207155840799-2024-02-07-102840907210.xml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAY5K3QRM5FYWPQJEB%2F20240207%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20240207T102840Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=0a52a2dfd411f7ba795933fafdd418c4baf62dbe47dd95f96f47318fc9740d70",
+                    "zip_data": "https://aadhaar-kyc-docs.s3.amazonaws.com/monowix/aadhaar_xml/197820240207155840799/197820240207155840799-2024-02-07-102840850997.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAY5K3QRM5FYWPQJEB%2F20240207%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20240207T102840Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=23a862eac2115b0b942f907934da07e1fcca6ba3cf72ec73996ce180cebd9708",
+                    "care_of": null,
+                    "share_code": "3352",
+                    "mobile_verified": false,
+                    "reference_id": "197820240207155840799",
+                    "aadhaar_pdf": null,
+                    "status": "success_aadhaar",
+                    "uniqueness_id": "39936d3a0e81b6349bf2be01c2cbddacfbc5bd99e7fe81c042a9c0b66b9f68c3"
+                }
+            },
+            "selfie": {
+                "status": 1,
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707301775/Images/ou34e8sgphb8qbfscqzj.jpg",
+                "image_local": "1707301774132_WhatsApp_Image_2023-09-22_at_4.41.42_PM.jpeg",
+                "reject_reason": "",
+                "details": {
+                    "confidence": 99.83667755126953,
+                    "match_status": true
+                }
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 1,
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707303991/Images/vtdws80hmq43kmqaz9mk.jpg",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "chavanpc30@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 56698297,
+        "username": "pooja nanasaheb chavan",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+919766908725",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 2,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 1,
+        "bankstatus": 0,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "65c071f4b124921af662d161",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c34ef6b124921af663170b",
+        "password": "$2b$10$ZiMVPiKNkJjgLzjeDZ.B4eQFKWS5PZEkLvJZidAoYURsr07SBXcYi",
+        "registerOn": "2024-02-07T09:35:50.707Z",
+        "updatedOn": "2024-02-07T09:35:50.707Z",
+        "bankSuspendDate": "2024-02-07T09:35:50.707Z",
+        "forgotDate": "2024-02-07T09:35:50.707Z",
+        "dateTime": "2024-02-07T09:35:50.707Z",
+        "lastLoginTime": "2024-02-09T07:41:50.648Z",
+        "__v": 0,
+        "otpTime": null,
+        "email": "chavanpc30@gmail.com"
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 3,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Phone",
+            "val": "+916263239789"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 14413916,
+        "username": "",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+916263239789",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 1,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 3,
+        "bankstatus": 3,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c219e1b124921af662fb14",
+        "password": "$2b$10$YU5pejQ40OzWY5iYV1TgneTS2Bmoyc7Xi5x.UgJ7ukLwOtCQkSSIG",
+        "registerOn": "2024-02-06T11:37:05.691Z",
+        "updatedOn": "2024-02-06T11:37:05.691Z",
+        "bankSuspendDate": "2024-02-06T11:37:05.691Z",
+        "forgotDate": "2024-02-06T11:37:05.691Z",
+        "dateTime": "2024-02-06T11:37:05.691Z",
+        "lastLoginTime": "2024-02-06T11:37:33.753Z",
+        "__v": 0,
+        "otpTime": null
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 3,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Phone",
+            "val": "+919335295451"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 53267218,
+        "username": "",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+919335295451",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 1,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 3,
+        "bankstatus": 3,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c1373db124921af662e83a",
+        "password": "$2b$10$i71nQ3AmrqR/pRaixDa2HO/QTtRLsmZ2eZBtsNJ3Wkq32yq2S.dMG",
+        "registerOn": "2024-02-05T19:30:05.139Z",
+        "updatedOn": "2024-02-05T19:30:05.139Z",
+        "bankSuspendDate": "2024-02-05T19:30:05.139Z",
+        "forgotDate": "2024-02-05T19:30:05.139Z",
+        "dateTime": "2024-02-05T19:30:05.139Z",
+        "lastLoginTime": "2024-02-05T19:31:12.655Z",
+        "__v": 0,
+        "otpTime": null,
+        "email": "lavisri001@gmail.com"
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 1,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 1,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 1,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 1,
+                "number": "AOQPY4058L",
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707221342/Images/b5rke06ichlqwuso9fvn.jpg",
+                "reject_reason": "",
+                "details": {
+                    "full_name": "amit yadav"
+                }
+            },
+            "aadhaar": {
+                "status": 1,
+                "number": "323863424930",
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707221455/Images/e6pdn1tnj5sz5zbcmeqr.jpg",
+                "image_back": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707221456/Images/dyim7cboz8v7l5tudpnv.jpg",
+                "image_local": "1707221455183_th.jpeg",
+                "reject_reason": "",
+                "details": {
+                    "full_name": "AMIT YADAV",
+                    "address": "INDRAPURI COLONY SITAPUR ROAD",
+                    "pincode": "226013"
+                }
+            },
+            "selfie": {
+                "status": 1,
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707221519/Images/bwnk53wufizqeatbecmj.jpg",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "amityadav.march@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 85495316,
+        "username": "amit yadav",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+917007324813",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 2,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 1,
+        "bankstatus": 1,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c0e423b124921af662e283",
+        "password": "$2b$10$ZrJBm2YGJlGzqZ0eomyNleuKoeNSBA7wf.QPltueA8.cpeC.9KsSK",
+        "email": "amityadav.march@gmail.com",
+        "registerOn": "2024-02-05T13:35:31.137Z",
+        "updatedOn": "2024-02-05T13:35:31.137Z",
+        "bankSuspendDate": "2024-02-05T13:35:31.137Z",
+        "forgotDate": "2024-02-05T13:35:31.137Z",
+        "dateTime": "2024-02-05T13:35:31.137Z",
+        "lastLoginTime": "2024-02-06T11:25:08.564Z",
+        "__v": 0,
+        "otpTime": null
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 3,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "mahesh.afibit@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 7774544,
+        "username": "mahesh anande",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+917387986404",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 1,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 1,
+        "tfaenablekey": "JBKSYQSJK5MEIMRK",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 3,
+        "bankstatus": 3,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "65c071f4b124921af662d161",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c0c669b124921af662deb4",
+        "password": "$2b$10$EC6ytVrmrJzbty/VhzrVseHg6O78PViK3nLuUzK/JOW9xBEtmE1Sm",
+        "email": "mahesh.afibit@gmail.com",
+        "registerOn": "2024-02-05T11:28:41.313Z",
+        "updatedOn": "2024-02-05T11:28:41.313Z",
+        "bankSuspendDate": "2024-02-05T11:28:41.314Z",
+        "forgotDate": "2024-02-05T11:28:41.314Z",
+        "dateTime": "2024-02-05T11:28:41.314Z",
+        "lastLoginTime": "2024-02-06T11:31:45.045Z",
+        "__v": 0,
+        "otpTime": null
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 3,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "rochakdoingzomato@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 47444656,
+        "username": "",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "",
+        "status": 1,
+        "level": 1,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 3,
+        "bankstatus": 3,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c0c228b124921af662dc1d",
+        "password": "$2b$10$.bquKrjIF88StxhTF3UGUurd2OdKgIPPlWbTzNub21rQZsrfv80yW",
+        "email": "rochakdoingzomato@gmail.com",
+        "registerOn": "2024-02-05T11:10:32.883Z",
+        "updatedOn": "2024-02-05T11:10:32.883Z",
+        "bankSuspendDate": "2024-02-05T11:10:32.883Z",
+        "forgotDate": "2024-02-05T11:10:32.883Z",
+        "dateTime": "2024-02-05T11:10:32.883Z",
+        "lastLoginTime": "2024-02-05T11:11:15.037Z",
+        "__v": 0,
+        "otpTime": null
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 1,
+                "mode": "Online"
+            },
+            "aadhaar": {
+                "status": 1,
+                "mode": "Online"
+            },
+            "selfie": {
+                "status": 1,
+                "mode": "Online"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 1,
+                "number": "MNMPS6561H",
+                "reject_reason": "",
+                "details": {
+                    "client_id": "pan_hnngnNGgaWQqaBjUkPuv",
+                    "pan_number": "MNMPS6561H",
+                    "full_name": "AKASH DATTATRAY SHINGADE",
+                    "category": "person"
+                }
+            },
+            "aadhaar": {
+                "status": 1,
+                "number": "695323412066",
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707130012/q1b7sf8vrpyqgmrtqu7o.jpg",
+                "image_local": "img-1707130012940.png",
+                "reject_reason": "",
+                "details": {
+                    "client_id": "aadhaar_v2_KNukpfyQWvcnPeUTkgke",
+                    "full_name": "Akash Dattatray Shingade",
+                    "aadhaar_number": "695323412066",
+                    "dob": "1998-12-28",
+                    "gender": "M",
+                    "address": {
+                        "country": "India",
+                        "dist": "Solapur",
+                        "state": "Maharashtra",
+                        "po": "Malsiras",
+                        "loc": "",
+                        "vtc": "Malshiras",
+                        "subdist": "Malshiras",
+                        "street": "",
+                        "house": "",
+                        "landmark": "SHRIRAMNAGAR"
+                    },
+                    "face_status": false,
+                    "face_score": -1,
+                    "zip": "413107",
+                    "profile_image": "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",
+                    "has_image": true,
+                    "email_hash": "",
+                    "mobile_hash": "7f708ae1ed3ed08872de6db1c430f0a125d1eb37c58327666ec2dc054f62ebaf",
+                    "raw_xml": "https://aadhaar-kyc-docs.s3.amazonaws.com/monowix/aadhaar_xml/206620240205161651929/206620240205161651929-2024-02-05-104652059264.xml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAY5K3QRM5FYWPQJEB%2F20240205%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20240205T104652Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=d09b5b09efe3efa75b6793d511160b2f3ccfb05fad75e0596a525b1254feae9d",
+                    "zip_data": "https://aadhaar-kyc-docs.s3.amazonaws.com/monowix/aadhaar_xml/206620240205161651929/206620240205161651929-2024-02-05-104651986616.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAY5K3QRM5FYWPQJEB%2F20240205%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20240205T104652Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=7d9d315cb532e270463fccfdc70017f6e18f280dd1d36c3cea842aa837d26969",
+                    "care_of": "S/O: Dattatray Shingade",
+                    "share_code": "3422",
+                    "mobile_verified": false,
+                    "reference_id": "206620240205161651929",
+                    "aadhaar_pdf": null,
+                    "status": "success_aadhaar",
+                    "uniqueness_id": "a29ce46f1660903f3c570841fd9691a4b1661595c0cba80251933e6c61059d5f"
+                }
+            },
+            "selfie": {
+                "status": 1,
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707130118/Images/rcpchiin0uwoc8q1dpxd.jpg",
+                "image_local": "1707130117046_WhatsApp_Image_2024-02-05_at_4.17.50_PM.jpeg",
+                "reject_reason": "",
+                "details": {
+                    "confidence": 99.0577621459961,
+                    "match_status": true
+                }
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "shingadeakash98@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 15804139,
+        "username": "akash dattatray shingade",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+919665077181",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 2,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Online",
+        "kycstatus": 1,
+        "bankstatus": 3,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c071f4b124921af662d161",
+        "password": "$2b$10$nKx3TKj22iWS8PgPdy25Ke4L2a82Ef3x3vzapES9ZSD/3uNfA06Ei",
+        "email": "shingadeakash98@gmail.com",
+        "registerOn": "2024-02-05T05:28:20.421Z",
+        "updatedOn": "2024-02-05T05:28:20.421Z",
+        "bankSuspendDate": "2024-02-05T05:28:20.421Z",
+        "forgotDate": "2024-02-05T05:28:20.421Z",
+        "dateTime": "2024-02-05T05:28:20.421Z",
+        "lastLoginTime": "2024-02-09T09:27:05.842Z",
+        "__v": 0,
+        "otpTime": null
+    },
+    {
+        "kycOnlineAPI": {
+            "aadhaarClientId": "0"
+        },
+        "kycV1": {
+            "status": 0
+        },
+        "kycStatusDetail": {
+            "pan": {
+                "status": 0,
+                "mode": "Offline"
+            },
+            "aadhaar": {
+                "status": 3,
+                "mode": "Offline"
+            },
+            "selfie": {
+                "status": 3,
+                "mode": "Offline"
+            }
+        },
+        "kycOnline": {
+            "pan": {
+                "status": 3,
+                "number": "",
+                "reject_reason": ""
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "",
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "image_local": "",
+                "reject_reason": ""
+            }
+        },
+        "kycOffline": {
+            "pan": {
+                "status": 0,
+                "number": "CVLPA1267K",
+                "image": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707973058/Images/ch8umko4voswzqce3wjz.png",
+                "reject_reason": "",
+                "details": {
+                    "full_name": "Mahesh Anande"
+                }
+            },
+            "aadhaar": {
+                "status": 3,
+                "number": "0",
+                "image": "",
+                "image_back": "",
+                "image_local": "",
+                "reject_reason": ""
+            },
+            "selfie": {
+                "status": 3,
+                "image": "",
+                "reject_reason": ""
+            }
+        },
+        "userOTP": {
+            "oldEmail": 0,
+            "oldPhone": 0,
+            "newEmail": 0,
+            "newPhone": 0,
+            "bankDetUpd": 0,
+            "withdraw": 0
+        },
+        "lastLoginBy": {
+            "from": "Email",
+            "val": "mahesha.fibit@gmail.com"
+        },
+        "userIdOld": "New",
+        "userId": "0",
+        "securityKey": 51846615,
+        "username": "mahesh anande",
+        "otpDisable": 0,
+        "email_confirmed": "0",
+        "phoneno": "+919657992011",
+        "address": "",
+        "city": "",
+        "zipcode": "",
+        "state": "",
+        "country": "IND",
+        "status": 1,
+        "level": 1,
+        "profileimage": "",
+        "resetlink": 0,
+        "tfaStatus": 0,
+        "tfaenablekey": "",
+        "registerBonusStatus": 0,
+        "spotfeeDiscount": 0,
+        "withdrawDisable": 0,
+        "kycMode": "Offline",
+        "kycstatus": 0,
+        "bankstatus": 1,
+        "userBankAccount": "",
+        "bankSuspend": "active",
+        "bankSuspendReason": "",
+        "forgotId": "",
+        "otp": 0,
+        "userType": "user",
+        "referUser": "",
+        "referPromoter": "",
+        "referCode": "",
+        "referCommission": 0,
+        "testUser": 0,
+        "advancedTrader": 0,
+        "tradeFees": 0,
+        "tradeFanTknFees": 0,
+        "oneSignalId": "",
+        "blockStatus": "",
+        "userblockDate": null,
+        "autoWithdraw": 1,
+        "autoWithdrawReason": "",
+        "autoWithdrawBlockDate": null,
+        "withdrawblockDate": null,
+        "tradeDisable": 0,
+        "tradeBlockReason": "",
+        "tradeBlockDate": null,
+        "p2pblockStatus": "",
+        "p2pDisabled": 0,
+        "p2pblockDate": null,
+        "usdmDisabled": 1,
+        "usdmBlockReason": "",
+        "usdmblockDate": null,
+        "_id": "65c067d8b124921af662cd24",
+        "password": "$2b$10$h8z1FUiYeZuxblvnVBZtAun.E0ywR/8UZPaIl3iH13cD4QkHQmJmC",
+        "email": "mahesha.fibit@gmail.com",
+        "registerOn": "2024-02-05T04:45:12.396Z",
+        "updatedOn": "2024-02-05T04:45:12.396Z",
+        "bankSuspendDate": "2024-02-05T04:45:12.396Z",
+        "forgotDate": "2024-02-05T04:45:12.396Z",
+        "dateTime": "2024-02-05T04:45:12.396Z",
+        "lastLoginTime": "2024-02-15T04:55:26.036Z",
+        "__v": 0,
+        "otpTime": null
+    }
+]

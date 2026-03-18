@@ -1,0 +1,223 @@
+[
+    {
+        "address": "",
+        "type": "Deposit",
+        "tag": "",
+        "txnId": "2.4020521433421494e+21",
+        "txnIdOld": [],
+        "clientOrderId": "",
+        "attachment": "https://res.cloudinary.com/dwiplehcw/image/upload/v1707223052/Images/okgxjwuxtnxkbezscb2m.png",
+        "amount": 1000,
+        "receiveAmount": 1000,
+        "usdAmount": 0,
+        "feeData": {
+            "fees": 0,
+            "feetype": 1,
+            "minwithamt": 0,
+            "tds": 0,
+            "tdstype": 1
+        },
+        "fees": 0,
+        "tdsAmount": 0,
+        "status": 0,
+        "rejectReason": "",
+        "moveCur": "",
+        "adminMove": "",
+        "adminVerify": "",
+        "autoWithdraw": 0,
+        "fundsMove": "",
+        "depositType": "Wallet Balance",
+        "bonusData": {
+            "status": 0,
+            "tradeQty": 0,
+            "bonusGiven": 0,
+            "bonusValue": 0,
+            "bonusCurrency": "INR"
+        },
+        "_id": "65c2285ab124921af6630253",
+        "userId": {
+            "username": "mahesh abasaheb anande",
+            "phoneno": "+919657992011",
+            "_id": "65c067d8b124921af662cd24",
+            "email": "mahesha.fibit@gmail.com"
+        },
+        "currencyId": {
+            "basecoin": "Coin",
+            "_id": "5e60ead7fefec8644823c355",
+            "currencyName": "Indian Rupee",
+            "currencySymbol": "INR"
+        },
+        "walletCurrencyId": "61330e7dedf7c88c84357063",
+        "paymentId": "65c22749b124921af6630224",
+        "approvedChkDate": "2024-02-06T12:38:50.576Z",
+        "approvedDate": "2024-02-06T12:38:50.576Z",
+        "createdDate": "2024-02-06T12:38:50.576Z",
+        "referenceId": "2024/2/6 12:38:50-65c067d8b124921af662cd24-2.4020521433421494e+21",
+        "__v": 0
+    },
+    {
+        "address": "",
+        "type": "Wallet Transfer",
+        "tag": "",
+        "txnId": "Main Wallet To Staking Wallet",
+        "txnIdOld": [],
+        "clientOrderId": "",
+        "attachment": "",
+        "amount": 10,
+        "receiveAmount": 10,
+        "usdAmount": 10,
+        "feeData": {
+            "fees": 0,
+            "feetype": 1,
+            "minwithamt": 0,
+            "tds": 0,
+            "tdstype": 1
+        },
+        "fees": 0,
+        "tdsAmount": 0,
+        "status": 1,
+        "rejectReason": "",
+        "moveCur": "",
+        "adminMove": "",
+        "adminVerify": "",
+        "autoWithdraw": 0,
+        "fundsMove": "",
+        "depositType": "Wallet Balance",
+        "bonusData": {
+            "status": 0,
+            "tradeQty": 0,
+            "bonusGiven": 0,
+            "bonusValue": 0,
+            "bonusCurrency": "INR"
+        },
+        "_id": "65c21f9ab124921af662fe12",
+        "userId": {
+            "username": "amit yadav",
+            "phoneno": "+917007324813",
+            "_id": "65c0e423b124921af662e283",
+            "email": "amityadav.march@gmail.com"
+        },
+        "currencyId": {
+            "basecoin": "TRC20",
+            "_id": "5fb7c15af1aa6b78d0a0446a",
+            "currencyName": "Tether USD",
+            "currencySymbol": "USDT"
+        },
+        "walletCurrencyId": "61330e0fedf7c88c84357055",
+        "approvedChkDate": "2024-02-06T12:01:30.912Z",
+        "approvedDate": "2024-02-06T12:01:30.912Z",
+        "createdDate": "2024-02-06T12:01:30.912Z",
+        "referenceId": "2024/2/6 12:1:30-65c0e423b124921af662e283-main wallet to staking wallet",
+        "__v": 0
+    },
+    {
+        "address": "",
+        "type": "Wallet Transfer",
+        "tag": "",
+        "txnId": "Main Wallet To Staking Wallet",
+        "txnIdOld": [],
+        "clientOrderId": "",
+        "attachment": "",
+        "amount": 20,
+        "receiveAmount": 20,
+        "usdAmount": 20,
+        "feeData": {
+            "fees": 0,
+            "feetype": 1,
+            "minwithamt": 0,
+            "tds": 0,
+            "tdstype": 1
+        },
+        "fees": 0,
+        "tdsAmount": 0,
+        "status": 1,
+        "rejectReason": "",
+        "moveCur": "",
+        "adminMove": "",
+        "adminVerify": "",
+        "autoWithdraw": 0,
+        "fundsMove": "",
+        "depositType": "Wallet Balance",
+        "bonusData": {
+            "status": 0,
+            "tradeQty": 0,
+            "bonusGiven": 0,
+            "bonusValue": 0,
+            "bonusCurrency": "INR"
+        },
+        "_id": "65c0c407b124921af662dd7f",
+        "userId": {
+            "username": "akash dattatray shingade",
+            "phoneno": "+919665077181",
+            "_id": "65c071f4b124921af662d161",
+            "email": "shingadeakash98@gmail.com"
+        },
+        "currencyId": {
+            "basecoin": "TRC20",
+            "_id": "5fb7c15af1aa6b78d0a0446a",
+            "currencyName": "Tether USD",
+            "currencySymbol": "USDT"
+        },
+        "walletCurrencyId": "61330e0fedf7c88c84357055",
+        "approvedChkDate": "2024-02-05T11:18:31.386Z",
+        "approvedDate": "2024-02-05T11:18:31.386Z",
+        "createdDate": "2024-02-05T11:18:31.386Z",
+        "referenceId": "2024/2/5 11:18:30-65c071f4b124921af662d161-main wallet to staking wallet",
+        "__v": 0
+    },
+    {
+        "address": "",
+        "type": "Wallet Transfer",
+        "tag": "",
+        "txnId": "Staking Wallet To Main Wallet",
+        "txnIdOld": [],
+        "clientOrderId": "",
+        "attachment": "",
+        "amount": 50,
+        "receiveAmount": 50,
+        "usdAmount": 50,
+        "feeData": {
+            "fees": 0,
+            "feetype": 1,
+            "minwithamt": 0,
+            "tds": 0,
+            "tdstype": 1
+        },
+        "fees": 0,
+        "tdsAmount": 0,
+        "status": 1,
+        "rejectReason": "",
+        "moveCur": "",
+        "adminMove": "",
+        "adminVerify": "",
+        "autoWithdraw": 0,
+        "fundsMove": "",
+        "depositType": "Wallet Balance",
+        "bonusData": {
+            "status": 0,
+            "tradeQty": 0,
+            "bonusGiven": 0,
+            "bonusValue": 0,
+            "bonusCurrency": "INR"
+        },
+        "_id": "65c0c34ab124921af662dd0a",
+        "userId": {
+            "username": "akash dattatray shingade",
+            "phoneno": "+919665077181",
+            "_id": "65c071f4b124921af662d161",
+            "email": "shingadeakash98@gmail.com"
+        },
+        "currencyId": {
+            "basecoin": "TRC20",
+            "_id": "5fb7c15af1aa6b78d0a0446a",
+            "currencyName": "Tether USD",
+            "currencySymbol": "USDT"
+        },
+        "walletCurrencyId": "61330e0fedf7c88c84357055",
+        "approvedChkDate": "2024-02-05T11:15:22.510Z",
+        "approvedDate": "2024-02-05T11:15:22.510Z",
+        "createdDate": "2024-02-05T11:15:22.510Z",
+        "referenceId": "2024/2/5 11:15:20-65c071f4b124921af662d161-staking wallet to main wallet",
+        "__v": 0
+    }
+]

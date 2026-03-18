@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --om-bg: #f6f7f9;
+    --om-surface: #ffffff;
+    --om-surface-2: #f0f2f5;
+    --om-text: #101828;
+    --om-muted: #667085;
+    --om-border: #e4e7ec;
+    --om-silver: #bfc5cc;
+    --om-silver-dark: #8e97a3;
+    --om-accent: #0f172a; /* deep slate */
+    --om-accent-2: #1f2937;
+}
+
+html, body{
+    background: var(--om-bg);
+    color: var(--om-text);
+}
+
+/* Silver look & feel overrides (assets CSS is heavy/minified) */
+.card,
+.card-item,
+.mobile-menu{
+    background-color: var(--om-surface) !important;
+    border: 1px solid var(--om-border) !important;
+    border-radius: 14px !important;
+}
+
+.theme-btn,
+button.btn.theme-btn{
+    background: linear-gradient(180deg, #ffffff 0%, var(--om-surface-2) 100%) !important;
+    color: var(--om-accent) !important;
+    border: 1px solid var(--om-border) !important;
+    box-shadow: 0 8px 18px rgba(16,24,40,0.08) !important;
+}
+.theme-btn:hover,
+button.btn.theme-btn:hover{
+    background: linear-gradient(180deg, var(--om-surface) 0%, #e9edf2 100%) !important;
+    border-color: #d0d5dd !important;
+}
+
+.form-control,
+.form--control,
+input[type="text"],
+input[type="password"],
+input[type="search"],
+select{
+    border-color: var(--om-border) !important;
+    border-radius: 10px !important;
+}
+
+.active{
+    color: var(--om-accent) !important;
+    background: #f8fafc !important;
+    border-right-color: var(--om-silver-dark) !important;
+}
+
+.ngx-pagination .current {
+    background: var(--om-accent) !important;
+    border-radius: 8px;
+}
+.error-message{
+    font-size: 10px;
+    color: red;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}

@@ -1,0 +1,164 @@
+<div class="dashboard-content-wrap">
+     
+    <div class="container-fluid">
+        <div class="mb-2">
+            <a routerLink="/home/userlist" style="color: #79bfff;"><i class="fa fa-arrow-circle-left"></i> Back </a> 
+            </div>
+         <div class="dashboard-heading mb-5">
+            <h3 class="fs-22 font-weight-semi-bold">Users Details</h3>
+        </div>
+        <div class="profile-detail mb-5">
+            <ul class="generic-list-item generic-list-item-flash">
+                 <!-- <li><span class="profile-name" *ngIf="kycdata.panFullName">Full Name:</span><span class="profile-desc" *ngIf="kycdata.panFullName">{{kycdata.panFullName}}</span> <span *ngIf="!kycdata.panFullName" class="profile-desc">--</span></li> -->
+                <!-- <li><span class="profile-name">Last Name:</span><span class="profile-desc">--</span></li> -->
+                <li><span class="profile-name">User Name:</span><span class="profile-desc">{{kycdata.username}}</span></li>
+                <li><span class="profile-name">Email:</span><span class="profile-desc">{{kycdata.email}}</span></li>
+                <li><span class="profile-name">Phone Number:</span><span class="profile-desc">{{kycdata.mobile_number}}</span></li>
+             </ul>    
+        </div>
+        <div class="profile-detail mb-5">
+            <div class="dashboard-heading mb-5">
+                <h3 class="fs-22 font-weight-semi-bold">KYC Details</h3>
+            </div>
+            <ul class="generic-list-item generic-list-item-flash">
+                <li><span class="profile-name">KYC Status :</span><span class="profile-desc" *ngIf="kycdata.aadharVerified==1 && kycdata.panVerified==1">Verified</span> <span *ngIf="kycdata.panVerified!==1 || kycdata.aadharVerified!==1" class="profile-desc">Not Verified</span></li>
+                <li>
+                    <span class="profile-name">Pan Status :</span><span class="profile-desc" *ngIf="kycdata.panVerified==1">Verified</span> <span *ngIf="kycdata.panVerified!==1" class="profile-desc">Not Verified</span>
+                    
+                    <ul  *ngIf="kycdata.panVerified==1" class="generic-list-item generic-list-item-flash">
+                        <li><span class="profile-name">Pan Mode :</span><span class="profile-desc">Online</span></li>
+                        <li><span class="profile-name">Pan Number :</span><span class="profile-desc">{{kycdata.panNumber}}</span></li>
+                        <li><span class="profile-name">Pan Name :</span><span class="profile-desc">{{kycdata.panFullName}}</span></li>
+                        <li><span class="profile-name">Reset Pan :</span><span class="profile-desc" > <a  (click)="panresetkyc()"    class="btn theme-btn theme-btn-sm theme-btn-transparent">Reset Pan</a>  </span> </li>
+                     </ul>   
+                </li>
+                <li>
+                    <span class="profile-name">Aadhaar Status :</span><span class="profile-desc" *ngIf="kycdata.aadharVerified==1">Verified</span> <span *ngIf="kycdata.aadharVerified!==1 && kycdata.aadharVerified!==2" class="profile-desc">Not Verified</span>  <span *ngIf="kycdata.aadharVerified==2" class="profile-desc">Waiting for approval</span>
+                    <ul  *ngIf="kycdata.aadharVerified==1" class="generic-list-item generic-list-item-flash">
+                        <li><span class="profile-name">Aadhaar Mode :</span><span class="profile-desc">{{kycdata.aadharVerifiedOnlineOrOffline}}</span></li>
+                        <li><span class="profile-name">Aadhaar Number :</span><span class="profile-desc">{{kycdata.aadharNumber}}</span></li>
+                        <li><span class="profile-name">Aadhaar Name :</span><span class="profile-desc">{{kycdata.aadharFullName}}</span></li>
+                        <!-- <li><span class="profile-name">Dist :</span><span class="profile-desc">{{kycdata.aadharResponse[0].data.address.dist}}</span></li>
+                        <li><span class="profile-name">Post  :</span><span class="profile-desc">{{kycdata.aadharResponse[0].data.address.po}}</span></li>
+                        <li><span class="profile-name">Image  :</span><span class="profile-desc"><img src="{{kycdata.aadharResponse[0].data.profile_image}}" alt=""></span></li> 
+                             -->
+                        <li><span class="profile-name">Reset Aadhaar :</span><span class="profile-desc" > <a (click)="adharresetkyc()"   class="btn theme-btn theme-btn-sm theme-btn-transparent">Reset Aadhaar</a>  </span> </li>
+                     </ul> 
+                    <ul  *ngIf="kycdata.aadharVerified==2" class="generic-list-item generic-list-item-flash">
+                        <li><span class="profile-name">Aadhaar Mode :</span><span class="profile-desc">{{kycdata.aadharVerifiedOnlineOrOffline}}</span></li>
+                        <li><span class="profile-name">Aadhaar Number :</span><span class="profile-desc">{{kycdata.aadharNumber}}</span></li>
+                        <li><span class="profile-name">Aadhaar Name :</span><span class="profile-desc">{{kycdata.aadharFullName}}</span></li>
+                        <li><span class="profile-name">Aadhaar Front Image:</span><span class="profile-desc"> <a href="https://api.ornamint.org/{{kycimage.aadharOfflineFrontImageLink}}" target="_blank"> <img src="https://api.ornamint.org/{{kycimage.aadharOfflineFrontImageLink}}" alt="" width="150"> </a></span></li>
+                        <li><span class="profile-name">Aadhaar Back Image:</span><span class="profile-desc"> <a href="https://api.ornamint.org/{{kycimage.aadharOfflineBackImageLink}}" target="_blank"> <img src="https://api.ornamint.org/{{kycimage.aadharOfflineBackImageLink}}" alt="" width="150"> </a> </span></li>
+                        <!-- <li><span class="profile-name">DOB:</span><span class="profile-desc">{{kycdata.aadharResponse[0].data.address.country}}</span></li> -->
+                        <li>
+                            <span class="profile-name">Status  :</span>
+                            <span class="profile-desc">
+                                <form [formGroup]="adharstatusform" (ngSubmit)="onSubmitstatus()">
+                                    <span class="profile-desc">
+                                    <select id="kycStatusFilter" formControlName="selectedOption">
+                                    <option value="">Select</option>
+                                    <option value="0">Reject</option>
+                                    <option value="1">Approved</option>
+                                    </select>
+                                </span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn theme-btn" type="submit" [disabled]="adharstatusform.invalid">Submit</button>
+                            </form>
+                            </span>
+                        
+                    </li>
+                   </ul>
+                </li>
+              </ul>    
+        </div>
+       
+        <div class="profile-detail mb-5">
+            <div class="dashboard-heading mb-5">
+                <h3 class="fs-22 font-weight-semi-bold">Bank Details</h3>   
+            </div>
+            <ul class="generic-list-item generic-list-item-flash">
+                <li>
+                    <span class="profile-name">Bank Status :</span><span class="profile-desc" *ngIf="kycdata.bankAccountVerified==1">Verified</span> <span *ngIf="kycdata.bankAccountVerified!==1" class="profile-desc">Not Verified</span>
+                    <ul  *ngIf="kycdata.bankAccountVerified==1" class="generic-list-item generic-list-item-flash">
+                        <li><span class="profile-name">Bank Name :</span><span class="profile-desc">{{kycdata.bankAccountFullName}}</span></li>
+                        <li><span class="profile-name">Account Number :</span><span class="profile-desc">{{kycdata.bankAccountNumber}}</span></li>
+                        <li><span class="profile-name">IFSC Code :</span><span class="profile-desc">{{kycdata.bankAccountIfsc}}</span></li>
+                        <li><span class="profile-name">Reset Bank Account :</span><span class="profile-desc" > <a (click)="bankresetkyc()"   class="btn theme-btn theme-btn-sm theme-btn-transparent">Reset Bank Account</a>  </span> </li>
+                     </ul>   
+                      <ul  *ngIf="kycdata.bankAccountVerified==2" class="generic-list-item generic-list-item-flash">
+                        <li><span class="profile-name">Bank Name :</span><span class="profile-desc">{{kycdata.bankAccountFullName}}</span></li>
+                        <li><span class="profile-name">Account Number :</span><span class="profile-desc">{{kycdata.bankAccountNumber}}</span></li>
+                        <li><span class="profile-name">IFSC Code :</span><span class="profile-desc">{{kycdata.bankAccountIfsc}}</span></li>
+                        <li>
+                            <span class="profile-name">Status  :</span>
+                            <span class="profile-desc" *ngIf="kycdata.bankAccountVerified==1">Approved</span>
+                            <span class="profile-desc" *ngIf="kycdata.bankAccountVerified==0">Rejected</span>
+                            <form [formGroup]="depositstatusform" (ngSubmit)="onSubmitbankstatus()" *ngIf="kycdata.bankAccountVerified==2">
+                                <span class="profile-desc" *ngIf="kycdata.bankAccountVerified=='2'" >
+                                    <select id="kycStatusFilter" formControlName="selectedOption">
+                                    <option value="">Select</option>
+                                    <option value='0'>Reject</option>
+                                    <option value='1'>Approved</option>
+                                    </select>
+                                </span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn theme-btn" type="submit" [disabled]="depositstatusform.invalid">Submit</button>
+                            </form>
+                        
+                        </li>
+                     </ul>   
+                </li>
+             </ul>    
+        </div>
+
+        <div class="profile-detail mb-5">
+            <div class="dashboard-heading mb-5">
+                <h3 class="fs-22 font-weight-semi-bold">Balance Details</h3>   
+            </div>
+                <ul class="generic-list-item generic-list-item-flash" *ngFor="let item of kycdata.balances">
+                        <li class="mb-3" *ngIf="item.currency=='inr'">
+                            <span class="profile-name">INR :</span>
+                            <span class="profile-desc">{{item.current_balance | number: '1.2-2'}} INR</span>
+                            <!-- <span class="profile-desc" > <a (click)="selectcurrency('inr')" data-toggle="modal" data-target="#addbalance"   class="btn theme-btn theme-btn-sm theme-btn-transparent">Add INR</a>  </span> -->
+                        </li>
+                        
+                        <li class="mb-3" *ngIf="item.currency=='usdt'">
+                            <span class="profile-name">USDT :</span>
+                            <span class="profile-desc">{{item.current_balance | number: '1.2-2'}} USDT</span>
+                            <!-- <span class="profile-desc" > <a (click)="selectcurrency('usdt')"  data-toggle="modal" data-target="#addbalance"  class="btn theme-btn theme-btn-sm theme-btn-transparent">Add USDT</a>  </span> -->
+                        </li>
+                </ul>   
+        </div>
+
+        <br><br><br><br>
+    </div><!-- end container-fluid -->
+</div><!-- end dashboard-content-wrap -->
+ 
+
+<div class="modal fade" id="addbalance" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+       <div class="modal-content">
+         
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            <!-- <h3 class="text-center" style="color: black;"> Buy Server</h3> -->
+            <div class="p-1">
+              <div class="col-lg-12">  
+                <form class="p-3 " [formGroup]="balanceform" (ngSubmit)="addbalance(balanceform.value)" style="border: 1px solid #ccc; border-radius: 10px;">
+                  <!-- <p style="color: green;">INR Balance = {{INR.current_balance | number : '1.4-4'}} INR</p> -->
+                    <input type="number" formControlName="amount" class="form-control mb-0"  placeholder="Enter Amount" style="margin: 0px 0px 20px 0px; width: 100%;"><br>
+                    <input type="text" formControlName="reason" class="form-control mb-0"  placeholder="Add Note" style="margin: 0px 0px 20px 0px; width: 100%;"><br>
+                    <div class="copy-text">
+                            <button type="submit" class="btn btn-primary btn-sm mr-2" style="height: 40px;" [disabled]="balanceform.invalid">Submit</button>
+                    </div>
+                </form> 
+              </div>
+            </div> 
+          </div>
+       </div>
+    </div>
+  </div> 
+ 

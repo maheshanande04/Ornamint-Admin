@@ -1,0 +1,70 @@
+<div class="dashboard-content-wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 responsive-column-half">
+                <div class="card card-item">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h3 class="fs-18 font-weight-semi-bold">Next Payout Records For This Month: </h3>
+                            <button (click)="exportToExcel()" class="btn btn-primary" style="margin-left: 80px;">Export to Excel</button>
+
+                            <!-- <span class="fs-15 cursor-pointer">View all</span> -->
+                        </div>
+                        <div class="notification-body">
+                            <div class="table-responsive mb-5">
+                                <table class="table generic-table mb-3 text-center">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">UserName</th>
+                                        <th scope="col">Server Amount</th>
+                                        <th scope="col">ROI Amount</th>
+                                        <th scope="col">Payout Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody *ngIf="payoutrecord.length > 0; else noData">
+                                    <tr *ngFor="let item of payoutrecord | paginate: {itemsPerPage:20, currentPage:p};">
+                                        <th scope="row">
+                                            <ul class="generic-list-item">
+                                                <li>{{ item.username}}</li>
+                                            </ul>
+                                        </th>
+                                        <td>
+                                            <ul class="generic-list-item">
+                                                <li>{{item.amount}}</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="generic-list-item">
+                                                <li>{{item.dAmount}}</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul class="generic-list-item">
+                                                <li>{{item.nextPayoutDate}}</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <ng-template #noData>
+                                        <tbody>
+                                          <tr>
+                                            <td colspan="8">
+                                                <img src="assets/images/not-fount.png" alt=""><br>
+                                                <h4>SORRY</h4>
+                                                <p>We Haven’t Found Any Data</p><br><br><br><br>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </ng-template>
+                                </table>
+                                <pagination-controls (pageChange)="p = $event" style="text-align: center;"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end card -->
+            </div><!-- end col-lg-5 -->
+        </div><!-- end row -->
+    </div><!-- end container-fluid -->
+</div><!-- end dashboard-content-wrap -->
+
+ 

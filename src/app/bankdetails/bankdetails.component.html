@@ -1,0 +1,49 @@
+<div class="dashboard-content-wrap">
+     
+    <div class="container-fluid">
+        <div class="mb-2">
+            <a routerLink="/home/banklist" style="color: #79bfff;"><i class="fa fa-arrow-circle-left"></i> Back </a> 
+            </div>
+         <div class="dashboard-heading mb-5">
+            <h3 class="fs-22 font-weight-semi-bold">Bank Details</h3>
+        </div>
+        <div class="profile-detail mb-5">
+            <ul class="generic-list-item generic-list-item-flash">
+                <li><span class="profile-name">User Name:</span><span class="profile-desc">{{data.username}}</span></li> 
+                <!-- <li><span class="profile-name">Email:</span><span class="profile-desc">{{data.panFullName}}</span></li>  -->
+                 <li><span class="profile-name">Pan Full Name:</span><span class="profile-desc">{{data.panFullName}}</span></li> 
+                 <li><span class="profile-name">Aadhaar Full Name:</span><span class="profile-desc">{{data.aadharFullName}}</span></li>
+                 <br>
+                 <li><span class="profile-name">Bank Account Full Name:</span><span class="profile-desc">{{data.bankAccountFullName}}</span></li>
+                <li><span class="profile-name">Account Number :</span><span class="profile-desc">{{data.bankAccountNumber}}</span></li>
+                 <li><span class="profile-name">IFSC Code :</span><span class="profile-desc">{{data.bankAccountIfsc}}</span></li>
+                  <!-- <li><span class="profile-name">Transaction Image  :</span><span class="profile-desc"> <a href="https://api.suvarnasiddhi.com/assets/{{data.paymentProof}}" target="_blank"> <img src="https://api.suvarnasiddhi.com/assets/{{data.paymentProof}}" alt="" width="150"> </a></span></li> -->
+                <li>
+                    <span class="profile-name">Status  :</span>
+                    <span class="profile-desc" *ngIf="data.bankAccountVerified==1">Approved</span>
+                    <span class="profile-desc" *ngIf="data.bankAccountVerified==0">Rejected</span>
+                     <form [formGroup]="depositstatusform" (ngSubmit)="onSubmitstatus()" *ngIf="data.bankAccountVerified=='2'">
+                         <span class="profile-desc" *ngIf="data.bankAccountVerified=='2'" >
+                            <select id="kycStatusFilter" formControlName="selectedOption">
+                            <option value="">Select</option>
+                            <option value='0'>Reject</option>
+                            <option value='1'>Approved</option>
+                            </select>
+                        </span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="btn theme-btn" type="submit" [disabled]="depositstatusform.invalid">Submit</button>
+                    </form>
+                   
+                </li>
+                <!-- <li><span class="profile-name">Transaction Date  :</span><span class="profile-desc">{{data.ist_date}}</span></li> -->
+
+
+             </ul>    
+        </div>
+       
+        <br><br><br><br>
+    </div><!-- end container-fluid -->
+</div><!-- end dashboard-content-wrap -->
+ 
+
+ 

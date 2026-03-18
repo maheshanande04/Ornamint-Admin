@@ -1,0 +1,72 @@
+/* Style for input type text */
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+   input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-clear-button {
+    appearance: none;
+    display: none;
+  }
+  
+  /* Style for select */
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+   select::-ms-expand {
+    display: none;
+  }
+  
+  select::-webkit-select-arrow {
+    display: none;
+  }
+  
+  select::after {
+    content: '\25BC';  
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;  
+  }
+  .filtertabs{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  .mlr-20{
+    margin: 0px 16px;
+  }
+  .pagination>.disabled>a{
+    color: #c4d5f6 !important;
+}
+.page-item{
+    line-height: 1.5;
+}
+.page-item .page-link {
+    position: relative;
+    display: block;
+    padding: 7px 14px;
+    margin-left: -1px;
+    line-height: 1.5;
+    border-radius: 10px;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.page-item .page-link.active {
+    background-color: #2B5BFF !important;
+    color: white; /* You can adjust the text color as needed */
+  }
